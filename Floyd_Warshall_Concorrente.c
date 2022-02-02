@@ -232,8 +232,14 @@ double floyd_warshall_sequencial(LONG *mat[], int n){
 
         /* Calcula as menores distâncias de cada par de vértices, podendo passar pelo intermediário */
         for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
+            /* 
+                Não precisa calcular para a linha do vértice intermediário, 
+                já que nenhuma distância, a partir desse vértice, será alterada nessa etapa.
+            */
+            if(k == i) 
+                continue;
 
+            for(int j=0; j<n; j++){
                 /* Se for INF, não há caminho entre os vértices que passe pelo intermediário */
                 if(mat[i][k] == INF || mat[k][j] == INF)
                     continue;
