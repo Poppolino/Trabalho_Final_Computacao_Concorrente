@@ -7,6 +7,15 @@
 
 
 
+/*
+    Descrição:
+
+    Tendo fornecido o número de vértices e arestas de um futuro grafo, cria
+    aleatoriamente as arestas que constituirão esse grafo, gerando um arquivo de teste.
+*/
+
+
+
 // Gera um número inteiro aleatório dentro do intervalo definido pelo início e fim
 int num_aleatorio(int ini, int fim){
     static int semente = 0;
