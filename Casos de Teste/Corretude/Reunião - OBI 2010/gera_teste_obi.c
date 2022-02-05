@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
         printf("O arquivo de entrada deve ser um Caso de Teste do problema \"Reunião\", da OBI de 2010.\n\n");
         return 1;
     }
-    
+     
     
     /* Pega os nomes dos arquivos */
     nome_arq_orig = argv[1];
